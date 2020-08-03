@@ -1,0 +1,74 @@
+/* HTML Attributes */
+
+body {
+    background: hsl(0, 0%, 98%);
+    color: hsl(234, 12%, 34%);
+    font-family: "Poppins", serif;
+    font-size: 15px;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+
+h1, h2, h3 {
+    font-weight: 600;
+    margin: 1px;
+}
+
+p {
+    color: hsl(229, 6%, 66%);
+}
+
+a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* Title Section */
+
+.title-one {
+    font-weight: 200;
+}
+
+/* Card Section */
+
+.card-section {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, 350px);
+    
+}
+
+.card {
+    justify-items: center;
+    background-color: white;
+    border-radius: 4px 4px 8px 8px;
+    text-align: left;
+    padding: 24px;
+    box-shadow: 2px 2px 2px;
+}
+
+.card-desc {
+    font-weight: 200;
+    margin-bottom: 44px;
+}
+
+.card-img {
+    margin-left: auto;
+    float: right;
+}
+
+.supervisor-card {
+    border-top: 4px solid hsl(180, 62%, 55%);
+}
+
+.team-builder-card {
+    border-top: 4px solid hsl(0, 78%, 62%);
+}
+
+.karma-card {
+    border-top: 4px solid hsl(34, 97%, 64%);
+}
+
+.calculator-card {
+    border-top: 4px solid hsl(212, 86%, 64%);
+}
