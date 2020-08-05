@@ -1,4 +1,4 @@
-/* HTML Attributes */
+/* HTML Elements */
 
 body {
     background: hsl(0, 0%, 98%);
@@ -6,13 +6,12 @@ body {
     font-family: "Poppins", serif;
     font-size: 15px;
     text-align: center;
-    width: 80%;
-    margin: auto;
+    width: 82.5%;
+    margin: 6rem auto 6rem;
 }
 
-h1, h2, h3 {
-    font-weight: 600;
-    margin: 1px;
+h2 {
+    margin: 0;
 }
 
 p {
@@ -25,31 +24,42 @@ a {
 
 /* Title Section */
 
+#title-section {
+    margin: 2rem auto 6rem auto;
+}
+
 .title-one {
     font-weight: 200;
 }
 
+.title-desc {
+    text-align: center;
+}
+
 /* Card Section */
 
-.card-section {
+#card-section {
     display: grid;
-    gap: 20px;
-    grid-template-columns: repeat(auto-fit, 350px);
-    
+    gap: 30px;
+    grid-template-columns: repeat(autofit, 1fr);
+    grid-template-rows: repeat(4, 1fr);
 }
 
 .card {
-    justify-items: center;
     background-color: white;
     border-radius: 4px 4px 8px 8px;
     text-align: left;
-    padding: 24px;
+    padding: 2rem;
     box-shadow: 2px 2px 2px;
+}
+
+.card-title {
+    margin: 0;
 }
 
 .card-desc {
     font-weight: 200;
-    margin-bottom: 44px;
+    height: 4rem;
 }
 
 .card-img {
@@ -71,4 +81,54 @@ a {
 
 .calculator-card {
     border-top: 4px solid hsl(212, 86%, 64%);
+}
+
+@media (min-width: 1440px) {
+
+    /* HTML Elements */
+    body {
+        width: 78%;
+    }
+
+    h2 {
+        font-size: 2.3rem;
+    }
+
+    /* Title Section */
+
+    #title-section {
+        width: 32rem;
+        margin-bottom: 4rem;
+    }
+
+    .title-desc {
+        text-align: center;
+    }
+
+    /* Card Section */
+
+    #card-section {
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+    .supervisor-card {
+        grid-column: span 2;
+        grid-row: 2 / span 2;
+    }
+
+    .team-builder-card {
+        grid-column: 3 / span 2;
+        grid-row: span 2;
+    }
+
+    .karma-card {
+        grid-column: 3 / span 2;
+        grid-row: 3 / span 2;
+    }
+
+    .calculator-card {
+        grid-column: 5 / span 2;
+        grid-row: 2 / span 2;
+    }
 }
