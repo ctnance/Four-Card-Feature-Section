@@ -52,8 +52,7 @@ a {
     border-radius: 4px 4px 8px 8px;
     text-align: left;
     padding: 2rem;
-    /* box-shadow: 2px 2px 4px; */
-    box-shadow: 0 8px 16px 0 hsla(212, 86%, 64%, 0.2);
+    box-shadow: 0 8px 16px 0 hsla(212, 86%, 50%, 0.2);
 }
 
 .card-title {
@@ -86,7 +85,14 @@ a {
     border-top: 4px solid hsl(212, 86%, 64%);
 }
 
-@media (min-width: 1440px) {
+/* Footer */
+.attribution {
+    font-size: 11px;
+}
+
+/* min-width for challenge for desktop is 1440px 
+   changing min-width to 1300 by preference */
+@media (min-width: 1300px) {
 
     /* HTML Elements */
     body {
